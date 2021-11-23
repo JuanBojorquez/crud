@@ -11,7 +11,6 @@ validar();
     <title>Document</title>
     <script src="./js/funciones.js"></script> 
 
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
@@ -31,7 +30,6 @@ if ($conn->connect_error) {
 
 $sql = "SELECT column1, column2, column3, column4, column5 FROM table1";
 $result = $conn->query($sql);
-//print_r($result);
 if ($result->num_rows > 0) {
   echo "<table border='1'><tr><th>ID</th><th>Name</th><th>Fecha</th><th>Numero</th><th>NumeroDouble</th><th>Eliminar</th><th>Modificar</th></tr>";
   // output data of each row
